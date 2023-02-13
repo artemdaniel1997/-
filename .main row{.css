@@ -1,0 +1,29 @@
+.mainrow{
+    display: flex;
+    margin: 100px;
+    padding: 60px 56px 60px 56px;
+}
+.title h1{
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 72px;
+}
+.greeting {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+.starttext{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    color: #FF680a;
+    margin-bottom: 48px;
+}
+
+position: absolute;
+width: 640px;
+height: 720px;
+left: 686px;
+top: 158px;

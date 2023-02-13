@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="StyleForm.css">
+    <link rel="stylesheet" href="action_page.php">
+  </head>
+  <body>
+    <main>
+    <div class="content">
+        <div class="form-popup" id="myForm">
+        <form action="action_page.php" class="form-container">
+        <h1>Поділися, будь ласка. Поштою</h1>
+        <h3> і запишіть гуся до бандерозагону</h3>
+      <label for="name"><b>им'я</b></label>
+          <input type="name" placeholder="Вкажіть ім'я " name="Name" required>
+      
+          <label for="email"><b>Электронная почта</b></label>
+          <input type="text" placeholder="Вкажіть электронную почту" name="email" required>
+      
+          <button type="submit" class="btn">запустити гуся</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Закрити</button>
+        </form>
+    </div>
+</div>
+</main>
+</html>

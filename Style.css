@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#header {
+    width: 100%;
+    background: linear-gradient(to left, #8DCCF0, white);
+    display: flex;
+}
+.header_logo {
+    display: flex;
+    color: black;
+    font-weight: 800;
+    font-size: 24px;
+    cursor: pointer;
+    margin-top: 34px;
+    margin-left: 8%;
+    margin-bottom: 58px;
+}
+header h7 {
+    font-size: 10px;
+    margin-left: 10px;
+}
+body {
+    font-family: 'Times new roman', sans-serif;
+}
+main {
+    background: linear-gradient(81.43deg, #FFFFFF 31.5%, #FFFFFF 31.5%, #8DCCF0 97.08%);
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+main h4 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+main h3{
+    color: #FF680a
+}
+.Titleh1{
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+}
+.description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 24px;
+    margin-bottom: 48px;
+}
+.Launch {
+    background-color: #FF680a;
+    border: #FF680a;
+    border-radius: 8px;
+    padding: 12px 24px;
+    cursor: pointer;
+}
+a {
+    color: #fff;
+}
+.wrapper {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+#leftcol {
+    width: 500px;
+    margin: 100px;
+    padding: 60px 56px 60px 56px;
+    float: left;
+    }
+#rightcol {
+    width: 500px;
+    margin-right: 100px;
+    float: right;
+}   
+* {
+    padding-bottom: 2px;
+}
+/*Our team*/
+.our_team{
+    color: #000;
+    background: lightblue;
+    padding-bottom: 50px;
+}
+.title {
+    text-transform: uppercase;
+    font-weight: 100;
+    text-align: center;
+    font-size: 32px;
+}
+p {
+    font-size: 16px;
+}
+.our_teams{
+    display: flex;
+    padding-right:20px;
+    margin: 80px;
+    font-weight:100;
+    text-align: center;
+}
+.line{
+    margin-bottom:60px;
+}
+.avatar{
+    background-color: #c9c9c9;
+    border-radius: 100px; /* Радиус скруглення */
+    box-shadow: 0 0 7px #666; 
+    width:125px;
+    height:125px;
+}
+.team_images{
+    text-align:center;
+    margin: 80px;
+    padding-bottom:20px;
+}
+b {
+    color: #000;
+}
+.images_text{
+    text-align:center;
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 400;
+}
+/*footer*/
+.footer {
+background-color: #c9c9c9;
+}
+.victory{
+    color: #000;
+    background: linear-gradient(81.43deg, #FFFFFF 31.5%, #FFFFFF 31.5%, #8DCCF0 97.08%);
+    padding-bottom:150px;
+}
+.title {
+    text-transform: uppercase;
+    font-weight: 100;
+    text-align:center;
+    font-size:32px;
+}
+h3{
+    color: black;
+    padding-top:80px;
+    margin-bottom:20px;
+}
+.line{
+    margin-bottom:60px;
+}
+
+.our_teams{
+    display:flex;
+    padding-left:80px;
+}
+.team_images{
+    text-align:center;
+    margin-right:130px;
+    padding-bottom:40px;
+}
+.pip{
+    font-weight: bold;
+}
+
+.images_text{
+    text-align:center;
+}
+.modal-bgd {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    Top: 0;
+    left: 0;
+    background: rgb(27 29 31 / 70%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+}
+.modal-form{
+    background: #fff;
+    padding: 32px 92px 60px 92px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.modal-form-title{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    color: #000;
+    margin: 32px  0 12px 0;
+}
+.modal-form-descr{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000;
+    margin-bottom: 24px;
+}
+.modal-form-field {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+.modal-field-name {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 8px;
+    color: #000;
+}
+.modal-form-input{
+    border: 1px solid #005BBB;
+    box-sizing: border-box;
+    border-radius: 8px;
+    height: 48px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000;
+    padding: 4px 8px;
+}
+.modal-form-btn{
+    background-color: #FF680a;
+    border: #FF680a;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    cursor: pointer;
+    border: 0;
+    margin-top: 24px;
+}
+.close-btn{
+    position: absolute;
+    right: 28px;
+    Top: 28px;
+    font-size: 14px;
+    color: #1b1d1f;
+    cursor: pointer;
+    border: 0;
+    background: none;
+}
+.modal-descr{
+    margin-bottom: 0;;
+}
+.modal-active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+
