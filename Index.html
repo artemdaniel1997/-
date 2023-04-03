@@ -1,6 +1,22 @@
 <!doctype html>
 <html lang="ua">
-  <head>
+pm.test("Status test", function () {
+    pm.response.to.have.status(200);
+});
+pm.test("environment to be production", function () {
+    pm.expect(pm.environment.get("env")).to.equal("production");
+});
+pm.test("response should be okay to process", function () {
+    pm.response.to.not.be.error;
+    pm.response.to.have.jsonBody("");
+    pm.response.to.not.have.jsonBody("error");
+});
+pm.test("response must be valid and have a body", function () {
+     pm.response.to.be.ok;
+     pm.response.to.be.withBody;
+     pm.response.to.be.json;
+});
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -11,118 +27,119 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
-  </head>
-  <body>
+</head>
+<body>
     <header id="header">
-        <div class="header_logo"><img src="ITGO.png" alt="Logo">
+        <div class="header_logo">
+            <img src="ITGO.png" alt="Logo">
             <h7>Школа підготовки <br>ІТ Спеціалістів</h7>
         </div>
     </header>
     <main>
         <div id="content">
             <div id="leftcol">
-            <div class="content">
-                <h4 class="greeting">Доброго вечора, ми з України</h4>
-                <h3 class="starttext">На старт. Увага. Полетіли!</h3>
-                <h1 class="Titleh1">Бандерогусь</h1> 
-                <br>
+                <div class="content">
+                    <h4 class="greeting">Доброго вечора, ми з України</h4>
+                    <h3 class="starttext">На старт. Увага. Полетіли!</h3>
+                    <h1 class="Titleh1">Бандерогусь</h1>
+                    <br>
+                </div>
+                <div id="main">
+                    <div class="desription">
+                        Спеціальний бойовий гусак із біолабораторій<br>
+                        Ураїни, Пишаюся своїми подвигами, блроню<br>
+                        Бвтьківщину і підримую позитивний дух народу<br>
+                        Слава Україні!</p>
+                        <br><br>
+                        <button class="Launch" id="open-form-modal-btn">Запустити гусака</button>
+                    </div>
+                </div>
             </div>
-            <div id="main">
-            <div class="desription">
-                    Спеціальний бойовий гусак із біолабораторій<br>
-                Ураїни, Пишаюся своїми подвигами, блроню<br>
-                Бвтьківщину і підримую позитивний дух народу<br>
-              Слава Україні!</p>
-                <br><br>
-                    <button class="Launch" id="open-form-modal-btn">Запустити гусака</button>
-            </div>
-            </div>
-            </div>
-        <div id="rightcol">
-            <img src="ITGO2.png" alt="BanderoGus">
-        </div>
-    </div>
-    <div class="our_team">   
-        <div class="title">
-            <h4>Цікаві факти про Бандерогусей</h4>
-            <img class = "line" src="webline_pro.jpg" alt="">
-            <p>Зазвичай Бандерогусі - виключно мирні птахи. Але у різі небезпеки</p>
-            <p>можуть атакувати ворогв системою надпотужного озброєння. Також</p>
-            <p>нищать психологічно, активуючи високотехнологічне шипіння і</p>
-            <p>розмахування крилами</p>
-        </div>
-        <br>
-        <div class="our_teams">
-        <div class="team_images">
-                <img src="ITGO3.png" alt="Avatar" class="avatar">
-                <p class = "pip"></p>
-                <p><b>Система навігації</b></p><br>
-            <img class = "line" src="Uni.png" alt="">
-                <br>
-                <p class = "images_text">Супутниковий GPS і</p>
-                <p class = "images_text">ехолокатори розпізнають </p>
-                <p class = "images_text">ворожу техніку навть</p>
-                <p class = "images_text">під час збірки</p>
-            </div> 
-          <div class="team_images">
-                <img src="ITGO4.png" alt="Avatar" class="avatar">
-                <p class = "pip"></p>
-                <p><b>Очі тепловізори</b></p><br>
-             <img class = "line" src="Uni.png" alt="">
-                <br>
-                <p class = "images_text">Допомагають виявити</p>
-                <p class = "images_text">теплову сигнатуру об'єтів</p>
-                <p class = "images_text">і зназно підвищують</p>
-                <p class = "images_text">точність удару</p>
-            </div>
-        <div class="team_images">
-                <img src="ITGO5.png" alt="Avatar" class="avatar">
-                <p class = "pip"></p>
-                <p><b>Байракрила</b></p><br> 
-                 <img class = "line" src="Uni.png" alt="">
-                <br>
-                <p class = "images_text">Можуть нести2-і керовані</p>
-                <p class = "images_text">ракети, що вражвють ціль</p>
-                <p class = "images_text">на відстані ніхріна собі</p>
-                <p class = "images_text">кілометрів</p>
+            <div id="rightcol">
+                <img src="ITGO2.png" alt="BanderoGus">
             </div>
         </div>
-    </div>
-</main>
-<footer>
-    <div class="victory">   
-        <div class="title">
-            <h3>Перемога завжди буде за нами</h3>
-            <img class = "line" src="webline_pro.jpg" alt="">
-        <br>
-        <i>Спеціальний бойовий гусак із біолабораторій <br></i>
-        <i>Ураїни, Пишаюся своїми подвигами, блроню<br> </i>
+        <div class="our_team">
+            <div class="title">
+                <h4>Цікаві факти про Бандерогусей</h4>
+                <img class="line" src="webline_pro.jpg" alt="">
+                <p>Зазвичай Бандерогусі - виключно мирні птахи. Але у різі небезпеки</p>
+                <p>можуть атакувати ворогв системою надпотужного озброєння. Також</p>
+                <p>нищать психологічно, активуючи високотехнологічне шипіння і</p>
+                <p>розмахування крилами</p>
+            </div>
+            <br>
+            <div class="our_teams">
+                <div class="team_images">
+                    <img src="ITGO3.png" alt="Avatar" class="avatar">
+                    <p class="pip"></p>
+                    <p><b>Система навігації</b></p><br>
+                    <img class="line" src="Uni.png" alt="">
+                    <br>
+                    <p class="images_text">Супутниковий GPS і</p>
+                    <p class="images_text">ехолокатори розпізнають </p>
+                    <p class="images_text">ворожу техніку навть</p>
+                    <p class="images_text">під час збірки</p>
+                </div>
+                <div class="team_images">
+                    <img src="ITGO4.png" alt="Avatar" class="avatar">
+                    <p class="pip"></p>
+                    <p><b>Очі тепловізори</b></p><br>
+                    <img class="line" src="Uni.png" alt="">
+                    <br>
+                    <p class="images_text">Допомагають виявити</p>
+                    <p class="images_text">теплову сигнатуру об'єтів</p>
+                    <p class="images_text">і зназно підвищують</p>
+                    <p class="images_text">точність удару</p>
+                </div>
+                <div class="team_images">
+                    <img src="ITGO5.png" alt="Avatar" class="avatar">
+                    <p class="pip"></p>
+                    <p><b>Байракрила</b></p><br>
+                    <img class="line" src="Uni.png" alt="">
+                    <br>
+                    <p class="images_text">Можуть нести2-і керовані</p>
+                    <p class="images_text">ракети, що вражвють ціль</p>
+                    <p class="images_text">на відстані ніхріна собі</p>
+                    <p class="images_text">кілометрів</p>
+                </div>
+            </div>
         </div>
-    </div>
-</footer>
-<div class="modal-bgd" id="form-modal">
-    <form action="#"class="modal-form" data-netlify = "true" id = "form">
-        <button class = "close-btn">X</button>
-        <img src="Tryzub.png" alt="Ukr-logo">
-        <h4 class="modal-form-title">Поділися, будь ласка, поштою</h4>
-        <p class="modal-form-descr">і запиши гуся до бандерзагону</p>
-        <div class="modal-form-field">
-            <label for="" class="modal-field-name">Ім'я</label>
-            <input type="name"  class="modal-form-field" id="user-name">
+    </main>
+    <footer>
+        <div class="victory">
+            <div class="title">
+                <h3>Перемога завжди буде за нами</h3>
+                <img class="line" src="webline_pro.jpg" alt="">
+                <br>
+                <i>Спеціальний бойовий гусак із біолабораторій <br></i>
+                <i>Ураїни, Пишаюся своїми подвигами, блроню<br> </i>
+            </div>
+        </div>
+    </footer>
+    <div class="modal-bgd" id="form-modal">
+        <form action="#" class="modal-form" data-netlify="true" id="form">
+            <button class="close-btn">X</button>
+            <img src="Tryzub.png" alt="Ukr-logo">
+            <h4 class="modal-form-title">Поділися, будь ласка, поштою</h4>
+            <p class="modal-form-descr">і запиши гуся до бандерзагону</p>
             <div class="modal-form-field">
-            <label for="" class="modal-field-name">E-mail</label>
-            <input type="email"  class="modal-form-field" id="user-email">
-            </div>
-            <button class="modal-form-btn" id="launch-btn">Запустити гуся</button>
-    </form>
-</div>
-<div class="modal-bgd" id="success-modal">
-    <form class="modal-form modal-form-container">
-        <button class = "close-btn">X</button>
-        <img src="Tryzub.png" alt="Ukr-logo">
-        <h4 class="modal-form-title">Дякуємо, гусь успишно запущений</h4>
-        <p class="modal-form-descr modal-descr">Слава Україні! Героям Слава!</p>
-</div>
-<script src="form.js"></script>
-  </body>
+                <label for="" class="modal-field-name">Ім'я</label>
+                <input type="name" class="modal-form-field" id="user-name">
+                <div class="modal-form-field">
+                    <label for="" class="modal-field-name">E-mail</label>
+                    <input type="email" class="modal-form-field" id="user-email">
+                </div>
+                <button class="modal-form-btn" id="Launch-btn">Запустити гуся</button>
+        </form>
+    </div>
+    <div class="modal-bgd" id="success-modal">
+        <form class="modal-form-modal-form-container">
+            <button class="close-btn">X</button>
+            <img src="Tryzub.png" alt="Ukr-logo">
+            <h4 class="modal-form-title">Дякуємо, гусь успишно запущений</h4>
+            <p class="modal-form-descr modal-descr">Слава Україні! Героям Слава!</p>
+    </div>
+    <script src="scripts/form.js"></script>
+</body>
 </html>
